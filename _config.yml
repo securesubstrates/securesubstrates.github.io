@@ -1,3 +1,6 @@
-theme: jekyll-theme-cayman
-title: Secure Substrates
-description: Cryptographically Protected Computations
+# Setup
+title:        Secure Substrates
+tagline:      Cryptographically Protected Computations
+baseurl:      ""
+paginate:     1
+markdown: kramdown
