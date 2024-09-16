@@ -1,0 +1,29 @@
+// $brand-color: #4182e4;
+// $secondary-brand-color: #4182e4;
+
+$palette-1-A : #264653;
+$palette-1-B : #2A9D8F;
+$palette-1-C : #E9C46A;
+$palette-1-D : #F4A261;
+$palette-1-E : #E76F51;
+
+
+$palette-2-A : #8ECAE6;
+$palette-2-B : #219EBC;
+$palette-2-C : #023047;
+$palette-2-D : #FFB703;
+$palette-2-E : #FB8500;
+
+$logo-text-color : $palette-2-A;
+// $landing-msg-text-color : #f27100;
+$landing-msg-text-color : $palette-2-D;
+
+$brand-color: #003462;
+$secondary-brand-color: mix($brand-color, $palette-2-B, 80%);
+
+$middle-gradient-color: mix($brand-color, $secondary-brand-color, 85%);
+
+// Breakpoints
+$tablet: "(min-width: 450px)";
+$mid-point: "(min-width: 620px)";
+$desktop: "(min-width: 768px)";

@@ -1,0 +1,150 @@
+:root {
+    --qc-wire-color : cornflowerblue;
+    --qc-wire-c-color : brown;
+    --qc-wire-width : 3px;
+
+    --qc-text-color : midnightblue;
+    --qc-cnot-fill : plum;
+    --qc-cnot-stroke : purple;
+
+    --qc-x-gate-fill : honeydew;
+    --qc-x-gate-stroke : seagreen;
+
+    --qc-h-gate-fill : linen;
+    --qc-h-gate-stroke : tomato;
+
+    --qc-z-gate-fill : lightgoldenrodyellow;
+    --qc-z-gate-stroke : gold;
+
+    --qc-meas-gate-fill : blanchedalmond;
+    --qc-meas-gate-stroke : var(--qc-wire-c-color);
+    --qc-meas-connector-stroke : var(--qc-wire-c-color);
+}
+
+.qc-wire-init {
+    dominant-baseline: middle;
+    font-size: 100%;
+    fill: var(--qc-text-color);
+}
+
+/* Text over qc-wire */
+.qc-wire-label {
+    dominant-baseline: hanging;
+    font-size: 75%;
+    fill: var(--qc-text-color);
+}
+
+/* Quantum wire in the circuit */
+.qc-wire {
+    stroke: var(--qc-wire-color);
+    stroke-width: var(--qc-wire-width);
+    stop-opacity: .8;
+}
+
+/* style for classical wire in circuit */
+.qc-wire-c {
+    stroke: var(--qc-wire-c-color);
+    stroke-width: var(--qc-wire-width);
+}
+
+/* style h gates */
+.qc-gate-group[data-gate="h"] > .qc-gate-label {
+    fill: color-mix(in oklab, var(--qc-h-gate-stroke) 70%, black);
+}
+
+.qc-gate-group[data-gate="h"] > .qc-gate-box {
+    fill: var(--qc-h-gate-fill);
+    stroke: var(--qc-h-gate-stroke);
+    stroke-width: var(--qc-wire-width);
+}
+
+/* style x gates */
+.qc-gate-group[data-gate="x"] > .qc-gate-label {
+    fill: color-mix(in oklab, var(--qc-x-gate-stroke) 70%, black);
+}
+
+.qc-gate-group[data-gate="x"] > .qc-gate-box {
+    fill: var(--qc-x-gate-fill);
+    stroke: var(--qc-x-gate-stroke);
+    stroke-width: var(--qc-wire-width);
+}
+
+/* style Z gates */
+.qc-gate-group[data-gate="z"] > .qc-gate-label {
+    fill: color-mix(in oklab, var(--qc-z-gate-stroke) 70%, black);
+}
+
+.qc-gate-group[data-gate="z"] > .qc-gate-box {
+    fill: var(--qc-z-gate-fill);
+    stroke: var(--qc-z-gate-stroke);
+    stroke-width: var(--qc-wire-width);
+}
+
+
+/* style measure gates */
+.qc-gate-group[data-gate="measure"] > .qc-gate-label {
+    fill: color-mix(in oklab, var(--qc-meas-gate-stroke) 70%, black);
+}
+
+.qc-gate-group[data-gate="measure"] > .qc-gate-box {
+    fill: var(--qc-meas-gate-fill);
+    stroke: var(--qc-meas-gate-stroke);
+    stroke-width: var(--qc-wire-width);
+}
+
+.qc-gate-group[data-gate="measure"] > .gc-gate-gauge-arc {
+    fill: var(--qc-meas-gate-fill);
+    stroke: var(--qc-meas-gate-stroke);
+    stroke-width: var(--qc-wire-width);
+}
+
+.qc-gate-group[data-gate="measure"] > .qc-gate-gauge-scale {
+    fill: var(--qc-meas-gate-fill);
+    stroke: var(--qc-meas-gate-stroke);
+    stroke-width: var(--qc-wire-width);
+}
+
+.qc-gate-group[data-gate="measure"] > .qc-wire-label {
+    fill: var(--qc-meas-gate-fill);
+    stroke: var(--qc-meas-gate-stroke);
+    stroke-width: var(--qc-wire-width);
+}
+
+
+.qc-gate-group[data-gate="measure"] > .qc-gate-link-c {
+    stroke: var(--qc-meas-connector-stroke);
+    stroke-width: var(--qc-wire-width);
+}
+
+/* style for vertical connection from one gate to another. This does not include the connection to classical wire after measurement. */
+.qc-gate-link {
+    stroke: var(--qc-wire-color);
+    stroke-width: var(--qc-wire-width);
+}
+
+
+/* style for the dot in .qc-gate-link */
+.qc-gate-dot {
+    fill:  var(--qc-wire-color);
+    stroke:  color-mix(in oklab, var(--qc-wire-color) 50%, black);
+    stroke-width: 3px;
+}
+
+/* style for text within a gate */
+.qc-gate-params {
+    stroke: bisque;
+}
+
+/* Not gate styling */
+.qc-gate-not {
+    stroke: purple;
+    fill: plum;
+    stroke-width: 2pt;
+}
+
+/* style for line within the QC gate */
+.qc-gate-not-line {
+    stroke: purple;
+    fill: plum;
+    stroke-width: 2pt;
+}

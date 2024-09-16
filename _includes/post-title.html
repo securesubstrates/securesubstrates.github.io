@@ -1,0 +1,23 @@
+<script
+    type="text/javascript"
+    id="MathJax-script"
+    async
+    defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+></script>
+
+<p class="post-details">
+    <span class="blog-filter">
+        {% if include.post.name %}
+            {% if include.post.author_staff_member %}
+                <a href="https://www.linkedin.com/in/{{include.post.author_staff_member}}">
+                    {{ include.post.name }}
+                </a>
+            {% else %}
+                {{ include.post.name }}
+            {% endif %}
+        {% endif %}
+    </span>
+	<span class="post-date">{{ include.post.date | date: "%B %d, %Y" }}</span>
+</p>
+

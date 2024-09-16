@@ -1,15 +1,74 @@
 ---
-layout: default
-title: {{ site.name }}
+title: Key management done right
+description: PQC, Kyber, NIST ML-KEM, Dilithium, NIST ML-DSA, Encrypted Deep Learning Data Pipeline, Encrypted AI Data Pipeline, Post-quantum Cryptography, Kyber,  provably Zero-Trust, registered attribute based encryption, key management system, lattice based cryptography, pairings based cryptography, isogeny based cryptography, RSA, ECDSA, EdDSA
 ---
-<!--
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span>
-    &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{
-    post.title }}</a></li> {% endfor %}
-  </ul>
+
+<section class="hero">
+  <div class="text-container">
+    <h1 class="editable">Key Management for AI data pipelines</h1>
+  </div>
+</section>
+
+<div class="content">
+  <section>
+    <div class="container flex">
+      <div class="text editable">
+        <h2><strong>Post-quantum design from the ground up</strong></h2>
+        <p>
+          Protect your customer's long-term data &mdash; healthcare records, KYC
+          records, biometrics, etc., &mdash; using
+          <strong>NIST standardized</strong> post-quantum Key Encapsulation
+          (ML-KEM/Kyber) and Signature (ML-DSA) algorithms.
+        </p>
+        <p>
+          And fear not, we still love and support classical algorithms (ECDSA,
+          RSA, etc.,) &mdash; including advanced
+          <em>pairings based</em> primitives!
+        </p>
+
+        <p>
+          If our cryptographic pallette does not suit your needs &mdash; or you
+          just don't want to trust our implementation (doubt is a virtue)
+          &mdash; you can bring your own components, then mix and match.
+        </p>
+      </div>
+
+      <div id="shor-qc" class="image" style="width: 530px">
+        {% include svg/shor.svg %}
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container flex">
+      <div class="text editable">
+        <h2><strong>Provably Zero-Trust</strong></h2>
+        <p>
+          Zero-Trust <em>without a proof</em> is no better than a pinky-promise.
+        </p>
+
+        <p>
+          We let you
+          <strong>sign and verify your own KMS components</strong> using your
+          own keys, so that you don't have to trust us or the
+          <em>software supply chain</em>
+          that we might have used.
+        </p>
+      </div>
+
+      <div class="text editable">
+        <h2><strong>Composable KMS for AI pipelines</strong></h2>
+        <p>
+          Protect <em>your data</em> &mdash; not just the keys! Process
+          (compose) encrypted data without exposing them to the cloud.
+        </p>
+        <p>
+          Build your ETL/ELT pipelines while
+          <strong>keeping your data always encrypted</strong>! Bring your own
+          filtering, tokenization, and searchable encryption schemes and store
+          your secrets in a high-fidelity KMS.
+        </p>
+      </div>
+    </div>
+  </section>
 </div>
-!-->

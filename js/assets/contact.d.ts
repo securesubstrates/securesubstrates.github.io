@@ -1,0 +1,11 @@
+declare function contactDivElement(): HTMLDivElement | null;
+declare function contactFormElement(): HTMLFormElement | null;
+declare function createElementFromHTML(htmlString: string): Node;
+declare function errorMessageHtml(): string;
+declare function successMessageHtml(): string;
+declare function updateContactAfterSubmit(message: string): void;
+declare function contactSendFailed(error: DOMException): void;
+declare function contactSendSuccess(): void;
+declare function sendForm(form: HTMLFormElement): void;
+declare const onSubmit: (event: Event) => void;
+declare const init: () => void;
