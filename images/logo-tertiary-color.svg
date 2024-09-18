@@ -3,7 +3,7 @@
           "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
 
-<svg  preserveAspectRatio="meet" height="550" width="550" viewBox="489 277 550 550" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg  preserveAspectRatio="xMidYMid meet" height="550" width="550" viewBox="489 277 550 550" fill="none" xmlns="http://www.w3.org/2000/svg">
 <style type="text/css">
     .logo-color {
         fill: #8ECAE6;
