@@ -9,7 +9,7 @@ google_maps_javascript_api_key:
 disqus_shortname:
 
 host: 0.0.0.0
-port: 65001
+port: 65000
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /images/favicon.png
