@@ -48,7 +48,7 @@
     font-family: "Roboto Serif";
     font-size: 2.3em;
     color: $landing-msg-text-color;
-    text-shadow: mix($landing-msg-text-color, $brand-color, 0.8) 2px 1px 3px;
+    text-shadow: mix($landing-msg-text-color, black, 8%) 2px 1px 1px;
 }
 
 .logo-color {
